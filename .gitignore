@@ -1,5 +1,6 @@
 Release*/
 Debug*/
+**/target/**
 build/
 html/
 Test-Suite
