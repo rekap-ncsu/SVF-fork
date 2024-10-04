@@ -1,0 +1,24 @@
+digraph "Call Graph" {
+	label="Call Graph";
+
+	Node0x567bd0cc54a0 [shape=record,shape=box,label="{CallGraphNode ID: 0 \{fun: _ZN3std2rt10lang_start17heb66d8d650999fa6E\}|{<s0>1}}"];
+	Node0x567bd0cc54a0:s0 -> Node0x567bd0cd2560[color=black];
+	Node0x567bd0c5acb0 [shape=record,shape=box,label="{CallGraphNode ID: 1 \{fun: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hfbda0c88a388407bE\}|{<s0>2|<s1>3}}"];
+	Node0x567bd0c5acb0:s0 -> Node0x567bd0cd3c70[color=black];
+	Node0x567bd0c5acb0:s1 -> Node0x567bd0cd4170[color=black];
+	Node0x567bd0cd3c70 [shape=record,shape=box,label="{CallGraphNode ID: 2 \{fun: _ZN3std3sys9backtrace28__rust_begin_short_backtrace17h3dc47b8c82fb5d34E\}|{<s0>4}}"];
+	Node0x567bd0cd3c70:s0 -> Node0x567bd0cd3f70[color=black];
+	Node0x567bd0cd3d70 [shape=record,shape=box,label="{CallGraphNode ID: 3 \{fun: _ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17hc16eabb7483eb2caE\}|{<s0>5}}"];
+	Node0x567bd0cd3d70:s0 -> Node0x567bd0cd3e70[color=black];
+	Node0x567bd0cd3e70 [shape=record,shape=box,label="{CallGraphNode ID: 4 \{fun: _ZN4core3ops8function6FnOnce9call_once17h177b17da1925ebf5E\}|{<s0>6}}"];
+	Node0x567bd0cd3e70:s0 -> Node0x567bd0c5acb0[color=black];
+	Node0x567bd0cd3f70 [shape=record,shape=box,label="{CallGraphNode ID: 5 \{fun: _ZN4core3ops8function6FnOnce9call_once17h5fe4f693cb04e75dE\}}"];
+	Node0x567bd0cd4070 [shape=record,shape=box,label="{CallGraphNode ID: 6 \{fun: _ZN4core3ptr85drop_in_place$LT$std..rt..lang_start$LT$$LP$$RP$$GT$..$u7b$$u7b$closure$u7d$$u7d$$GT$17he6e541ed319443a1E\}}"];
+	Node0x567bd0cd4170 [shape=record,shape=box,label="{CallGraphNode ID: 7 \{fun: _ZN54_$LT$$LP$$RP$$u20$as$u20$std..process..Termination$GT$6report17h940f4b2e3bad1f2fE\}}"];
+	Node0x567bd0cd2260 [shape=record,shape=box,label="{CallGraphNode ID: 8 \{fun: _ZN12rust_example4main17h202e05779596d456E\}}"];
+	Node0x567bd0cd2360 [shape=record,shape=box,label="{CallGraphNode ID: 9 \{fun: main\}|{<s0>7}}"];
+	Node0x567bd0cd2360:s0 -> Node0x567bd0cc54a0[color=black];
+	Node0x567bd0cd2460 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 10 \{fun: llvm.dbg.declare\}}"];
+	Node0x567bd0cd2560 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 11 \{fun: _ZN3std2rt19lang_start_internal17h5e7c81cecd7f0954E\}}"];
+	Node0x567bd0cd2660 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 12 \{fun: rust_eh_personality\}}"];
+}

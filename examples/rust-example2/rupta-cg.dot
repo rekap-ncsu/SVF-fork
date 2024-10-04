@@ -1,0 +1,5 @@
+digraph {
+    0 [ label = "rust_example::main" ]
+    1 [ label = "rust_example::swap" ]
+    0 -> 1 [ label = "bb0[4]" ]
+}

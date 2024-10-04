@@ -1,0 +1,23 @@
+digraph "Call Graph" {
+	label="Call Graph";
+
+	Node0x634dfbc36680 [shape=record,shape=box,label="{CallGraphNode ID: 0 \{fun: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h8398303cbdb34efdE\}}"];
+	Node0x634dfbc35420 [shape=record,shape=box,label="{CallGraphNode ID: 1 \{fun: _ZN3std2rt10lang_start17h66c386e9799a19d2E\}|{<s0>1|<s1>2|<s2>3}}"];
+	Node0x634dfbc35420:s0 -> Node0x634dfbc177b0[color=black];
+	Node0x634dfbc35420:s1 -> Node0x634dfbc175b0[color=black];
+	Node0x634dfbc35420:s2 -> Node0x634dfbc176b0[color=black];
+	Node0x634dfbc36710 [shape=record,shape=box,label="{CallGraphNode ID: 2 \{fun: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h2aa3428957b6e91bE\}|{<s0>4}}"];
+	Node0x634dfbc36710:s0 -> Node0x634dfbc36680[color=black];
+	Node0x634dfbc367a0 [shape=record,shape=box,label="{CallGraphNode ID: 3 \{fun: _ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17h38b05db9e3b969c8E\}|{<s0>5}}"];
+	Node0x634dfbc367a0:s0 -> Node0x634dfbc36680[color=black];
+	Node0x634dfbbecd30 [shape=record,shape=box,label="{CallGraphNode ID: 4 \{fun: _ZN4core3ptr85drop_in_place$LT$std..rt..lang_start$LT$$LP$$RP$$GT$..$u7b$$u7b$closure$u7d$$u7d$$GT$17hb5c6c67add76de9eE\}}"];
+	Node0x634dfbbece30 [shape=record,shape=box,label="{CallGraphNode ID: 5 \{fun: _ZN12rust_example4main17h23cf9e98865be002E\}}"];
+	Node0x634dfbbecf30 [shape=record,shape=box,label="{CallGraphNode ID: 6 \{fun: main\}|{<s0>6|<s1>7|<s2>8}}"];
+	Node0x634dfbbecf30:s0 -> Node0x634dfbc177b0[color=black];
+	Node0x634dfbbecf30:s1 -> Node0x634dfbc175b0[color=black];
+	Node0x634dfbbecf30:s2 -> Node0x634dfbc176b0[color=black];
+	Node0x634dfbbed030 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 7 \{fun: rust_eh_personality\}}"];
+	Node0x634dfbc175b0 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 8 \{fun: _ZN3std2rt19lang_start_internal17h4308cf6398dd4975E\}}"];
+	Node0x634dfbc176b0 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 9 \{fun: llvm.lifetime.end.p0\}}"];
+	Node0x634dfbc177b0 [shape=record,shape=Mrecord,label="{CallGraphNode ID: 10 \{fun: llvm.lifetime.start.p0\}}"];
+}
